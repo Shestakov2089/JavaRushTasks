@@ -1,5 +1,6 @@
 package com.javarush.task.pro.task09.task0908;
 
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /* 
@@ -20,6 +21,7 @@ public class Solution {
     }
 
     public static String toHex(String binaryNumber) {
+        if (binaryNumber == null || binaryNumber == "" || !binaryNumber.matches("[0-1]+")) return "";
         String hexNumber = "";
         while (binaryNumber.length() % 4 != 0) {
             binaryNumber = "0" + binaryNumber;
@@ -39,6 +41,7 @@ public class Solution {
         }
 
         public static String toBinary (String hexNumber) {
+            if (hexNumber == null || hexNumber == "" || !hexNumber.matches("[0-9a-f]+")) return "";
             StringBuilder binaryNumber = new StringBuilder();
             for (int i = 0; i < hexNumber.length(); i++) {
                 char ch = hexNumber.charAt(i);
