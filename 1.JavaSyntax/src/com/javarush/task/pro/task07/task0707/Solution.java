@@ -19,14 +19,14 @@ public class Solution {
     public static void main(String[] args) {
         System.out.print(char2);
         System.out.print(char1);
-        System.out.print(char3);
-        System.out.print(char4);
         System.out.print(char5);
-        System.out.print(char6);
-        System.out.print(char7);
-        System.out.print(char8);
         System.out.print(char9);
+        System.out.print(char4);
+        System.out.print(char8);
+        System.out.print(char7);
+        System.out.print(char6);
         System.out.print(char10);
+        System.out.print(char3);
         System.out.println();
     }
 }
